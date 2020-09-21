@@ -34,7 +34,14 @@ Project utilizes [Composer](https://getcomposer.org/). Make sure you have Compos
 
 ## Server side setup
 
-### Point of entry
+Point of entry
 
 ```/public```
 
+Copy settings
+
+```cp .env.example .env```
+
+Don't forget to generate your key.
+
+```php artisan key:generate```
