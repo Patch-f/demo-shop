@@ -13,26 +13,17 @@
 - Tokenizer PHP Extension
 - XML PHP Extension
 
+### Install dependencies
+
+Project utilizes [Composer](https://getcomposer.org/). Make sure you have Composer installed on your machine.
 
 ## Install
 
 ```git clone https://github.com/Patch-f/demo-shop.git```
 
-### Install dependencies
-
-Project utilizes [Composer](https://getcomposer.org/). Make sure you have Composer installed on your machine.
-
 ```composer install```
 
-### Make migrations
-
-```php artisan migrate```
-
-### If you need test data
-
-```php artisan db:seed```
-
-## Server side setup
+## Server side config
 
 Point of entry
 
@@ -45,3 +36,11 @@ Copy settings
 Don't forget to generate your key.
 
 ```php artisan key:generate```
+
+Make migrations
+
+```php artisan migrate```
+
+### If you need test data
+
+```php artisan db:seed```
