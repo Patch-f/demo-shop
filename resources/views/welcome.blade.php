@@ -17,7 +17,7 @@
     </section>
     <section class="text-center">
         <div class="container">
-            <h2>Товары</h2>
+            <h2><a href="{{route('product.index')}}">Товары</a></h2>
             <table class="table">
                 <thead>
                     <tr>
@@ -40,7 +40,7 @@
     </section>
     <section class="text-center">
         <div class="container">
-            <h2>Категории</h2>
+            <h2><a href="{{route('category.index')}}">Категории</a></h2>
             <table class="table">
                 <thead>
                     <tr>

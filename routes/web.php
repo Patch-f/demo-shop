@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','App\http\controllers\WelcomeController@index')->name('welcome');
+Route::get('/', 'App\http\controllers\WelcomeController@index')->name('welcome');
 Route::get('/help/api', 'App\http\controllers\ApiController@index')->name('help.api');
+Route::resource('category', 'App\http\controllers\CategoryController');
+Route::resource('product', 'App\http\controllers\ProductController');
